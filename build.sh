@@ -1,2 +1,6 @@
-go build -o output/main src/main.go
-cp -rf conf output
+
+cd src
+go build
+cd -
+mv -f src/bc9shu.learn ./
+

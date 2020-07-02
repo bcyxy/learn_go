@@ -1,15 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"mypkg"
-
-	"github.com/Unknwon/goconfig"
+	"bc9shu.learn/pkg1"
 )
 
 func main() {
-	confFile, _ := goconfig.LoadConfigFile("test.conf")
-	tmpConfVal, _ := confFile.GetValue("aaa", "conf_name1")
-	fmt.Println(tmpConfVal)
-	mypkg.TestFunc()
+	pkg1.TestFunc()
 }
